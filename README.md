@@ -4,9 +4,9 @@ A 1D convolutional neural network that tells apart newborns' EEG responses to tw
 
 **Why it matters:** dyslexia is usually diagnosed years after it starts. Early signs may already show in how a newborn's brain processes speech. A model that reliably separates responses to similar speech sounds is a first step towards using EEG as an early biomarker.
 
-📄 [Read the thesis (PDF)](https://www.laura-winkler.com/thesis.pdf) · 🌐 [Project page](https://www.laura-winkler.com)
+📄 [Read the thesis (PDF)](https://www.laura-winkler.com/thesis.pdf)
 
-![Architecture of the 1D CNN](images/thesis-arch.jpg)
+![Architecture of the 1D CNN](thesis-arch.jpg)
 
 ## Results
 
@@ -18,7 +18,7 @@ Evaluated on **9 newborns the model had never seen** (1,440 trials), after train
 
 On the training participants, 4-fold cross-validation reached 98.5 % ± 0.3 % binary accuracy (AUC 0.998).
 
-![Confusion matrix and metrics](images/thesis-results.jpg)
+![Confusion matrix and metrics](thesis-results.jpg)
 
 > **Note on the metrics in the notebook:** the column called `accuracy` (≈ 0.003) is Keras' exact-match `Accuracy`, which doesn't make sense for a sigmoid output. The relevant metric is `binary accuracy`.
 
